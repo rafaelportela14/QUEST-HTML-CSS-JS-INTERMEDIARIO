@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    background-image: url(../images/bg-repeat.jpg);
+
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.container {
+    width: 800px;
+    height: 402px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+
+
+}
+
+.container .duvida {
+    /* display: flex;
+    align-items: center;
+    flex-direction: column; */
+    width: 400px;
+    height: 111px;
+    margin-bottom: 60px;
+    margin-right: 40px;
+    margin-left: -40px;
+
+}
+
+
+.container .duvida h1 {
+    font-weight: 900;
+    font-size: 20px;
+    width: 387.25px;
+    height: 36px;
+    padding-left: 90px;
+    padding-bottom: 50px;
+    color: #FFFFFF;
+
+}
+
+
+.container .duvida p {
+    font-weight: 400;
+    font-size: 15px;
+    text-align: justify;
+    width: 400px;
+    height: 54px;
+    padding-left: 90px;
+    padding-top: 50px;
+    color: #FFFFFF;
+
+
+}
+
+/* .container img {
+    
+    width: 800px;
+    height: 402px;
+    top: -262px;
+    left: -411px;
+    gap: 0px;
+    opacity: 0px;
+      
+} */
+
+
+
+
+
+.formulario {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    background-color: white;
+    padding: 15px;
+    margin-right: 50px;
+    width: 340px;
+    height: 378px;
+    top: -250px;
+    left: -1px;
+    opacity: 0px;
+
+}
+
+.formulario .span-required {
+    /* display: none; */
+    color: #F52E2E;
+    font-family: Roboto;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 9.38px;
+    margin-right: 235px;
+      
+    
+}
+
+.formulario .campo-envio {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    gap: 15px;
+
+}
+
+
+
+.formulario .submit-btn {
+    width: 298.01px;
+    height: 41.13px;
+    top: 65px;
+    left: 19px;
+    background-color: #3CCC87;
+    color: white;
+    border-radius: 5px;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.formulario .submit-btn:hover{
+    background-color: #299b64c9 ;
+    transition: 0.2s;
+
+}
+
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+textarea {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid black;
+    border-radius: 05px;
+
+}
+
+
+.menssagem-sucesso{
+    background-color: #3CCC87;
+    color: white;
+    width: max-content;
+    padding: 1rem;
+    pointer-events: none;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: .35rem;
+    opacity: 0;
+    
+ }
+
+ .menssagem-sucesso.active{
+    display: block;
+    pointer-events: all;
+
+    animation-name: fadeOut;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+
+ }
+
+ @keyframes fadeOut {
+    0%, 25%, 50%, 75% {
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+ }
+
+ .menssagem-sucesso .menssagem p{
+    color: white;
+    margin-bottom: 10px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    
+ }
+
+ .span-required{
+    display: none;
+ }
+
+
+ @media (max-width:380px){
+    /* .container .duvida:nth-child(1){
+        flex-direction: column;
+    }
+
+    .container .formulario:nth-child(1){
+        flex-direction: column;
+    }
+
+    textarea{
+        height: 200px;
+    } */
+
+  
+
+    .menssagem-sucesso{
+        width: 35ch;
+        top: 5%;
+    }
+
+ }
